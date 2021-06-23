@@ -30,7 +30,7 @@ public class TokenUtil {
 		params.add("username", username);
 		params.add("password", password);
 
-		ResultActions result = mockMvc
+		ResultActions result = mockMvc 
 				.perform(post("/oauth/token")
 						.params(params)
 						.with(httpBasic(clientId, clientSecret))
